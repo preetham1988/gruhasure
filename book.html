@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Inspection – Namma HomeCheck Bangalore</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<header class="nav-wrap" id="navbar"><nav class="nav-inner container">
+  <a href="index.html" class="logo"><span class="logo-icon">⬡</span><span class="logo-text">Namma<strong>HomeCheck</strong></span></a>
+  <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About Us</a></li><li><a href="faq.html">FAQs</a></li>
+    <li><a href="contact.html">Contact</a></li><li><a href="book.html" class="nav-cta active">Book Inspection</a></li>
+  </ul>
+</nav></header>
+
+<section class="page-hero"><div class="container">
+  <span class="eyebrow">Get Started</span>
+  <h1>Book Your Inspection</h1>
+  <p>Fill in the form below. Our team will call you within 2 hours to confirm details and schedule your visit.</p>
+</div></section>
+
+<section class="section book-section"><div class="container book-layout">
+  <div class="book-form-wrap">
+    <h2>Inspection Enquiry Form</h2>
+    <p class="form-subtext">All fields marked * are required. We'll respond within 2 business hours.</p>
+    <form class="book-form" id="bookForm" novalidate>
+      <div class="form-row">
+        <div class="form-group"><label for="fname">Full Name *</label><input type="text" id="fname" name="fname" placeholder="e.g. Suresh Reddy" required/></div>
+        <div class="form-group"><label for="phone">Phone Number *</label><input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required/></div>
+      </div>
+      <div class="form-group"><label for="email">Email Address *</label><input type="email" id="email" name="email" placeholder="you@example.com" required/></div>
+      <div class="form-row">
+        <div class="form-group"><label for="service">Service Required *</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service…</option>
+            <option>Home Inspection</option><option>Re-Inspection</option>
+            <option>Dampness Inspection</option><option>Multi-Stage Inspection</option>
+            <option>Area Measurement</option><option>Snagging List</option>
+            <option>Not Sure – Need Advice</option>
+          </select>
+        </div>
+        <div class="form-group"><label for="property-type">Property Type *</label>
+          <select id="property-type" name="property-type" required>
+            <option value="">Select type…</option>
+            <option>Flat / Apartment</option><option>Villa / Independent House</option>
+            <option>Plot</option><option>Commercial</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label for="area-sqft">Approx. Area (sq ft)</label><input type="number" id="area-sqft" name="area-sqft" placeholder="e.g. 1200"/></div>
+        <div class="form-group"><label for="locality">Locality in Bangalore *</label><input type="text" id="locality" name="locality" placeholder="e.g. Whitefield, HSR Layout" required/></div>
+      </div>
+      <div class="form-group"><label for="possession-date">Preferred Inspection Date</label><input type="date" id="possession-date" name="possession-date"/></div>
+      <div class="form-group"><label for="message">Additional Details / Questions</label><textarea id="message" name="message" rows="4" placeholder="Tell us about your property, any specific concerns, or questions…"></textarea></div>
+      <div class="form-group checkbox-group">
+        <label class="checkbox-label"><input type="checkbox" id="consent" name="consent" required/> I agree to be contacted by Namma HomeCheck regarding my enquiry. *</label>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg btn-full">Submit Enquiry →</button>
+    </form>
+    <div class="form-success" id="formSuccess" style="display:none;">
+      <div class="success-icon">✅</div>
+      <h3>Enquiry Received!</h3>
+      <p>Thank you! Our team will call you within 2 business hours. Check your email for a confirmation.</p>
+      <a href="index.html" class="btn btn-outline">Back to Home</a>
+    </div>
+  </div>
+  <div class="book-sidebar">
+    <div class="sidebar-card"><h3>📞 Prefer to Call?</h3><p>Talk directly to our engineers for free advice.</p><a href="tel:+919876543210" class="btn btn-outline btn-full">+91 98765 43210</a></div>
+    <div class="sidebar-card"><h3>💬 WhatsApp Us</h3><p>Send your property details on WhatsApp for instant response.</p><a href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20book%20a%20home%20inspection%20in%20Bangalore" target="_blank" class="btn btn-whatsapp btn-full">Chat on WhatsApp</a></div>
+    <div class="sidebar-card info-card"><h3>What Happens Next</h3>
+      <ol class="sidebar-steps">
+        <li>Our engineer calls within 2 hours</li>
+        <li>We confirm property details &amp; date</li>
+        <li>You pay a small advance online</li>
+        <li>Engineer visits on scheduled date</li>
+        <li>Report delivered within 24 hours</li>
+      </ol>
+    </div>
+    <div class="sidebar-card trust-card">
+      <div class="trust-row"><span class="trust-icon">✅</span><span>Certified Civil Engineers</span></div>
+      <div class="trust-row"><span class="trust-icon">✅</span><span>Photo-backed Report in 24 hrs</span></div>
+      <div class="trust-row"><span class="trust-icon">✅</span><span>100% Builder-independent</span></div>
+      <div class="trust-row"><span class="trust-icon">✅</span><span>All Bangalore localities covered</span></div>
+      <div class="trust-row"><span class="trust-icon">✅</span><span>500+ inspections completed</span></div>
+    </div>
+  </div>
+</div></section>
+
+<footer class="footer"><div class="container footer-grid">
+  <div class="footer-brand"><a href="index.html" class="logo logo-light"><span class="logo-icon">⬡</span><span class="logo-text">Namma<strong>HomeCheck</strong></span></a><p>Bangalore's independent home inspection experts.</p></div>
+  <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html#home-inspection">Home Inspection</a></li><li><a href="services.html#dampness">Dampness Inspection</a></li></ul></div>
+  <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="faq.html">FAQs</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+  <div class="footer-col"><h4>Contact</h4><ul><li>📞 +91 98765 43210</li><li>✉️ hello@nammahomecheck.in</li></ul></div>
+</div><div class="footer-bottom container"><p>© 2025 Namma HomeCheck. All rights reserved.</p></div></footer>
+<script src="js/main.js"></script>
+</body></html>
