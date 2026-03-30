@@ -59,20 +59,40 @@
         <div class="cfield-group">
           <div class="cfield">
             <label for="ci-fname">First Name *</label>
-            <input type="text" id="ci-fname" name="fname" placeholder="e.g. Suresh" required/>
+            <input type="text" id="ci-fname" name="fname" placeholder="e.g. Anil" required/>
           </div>
           <div class="cfield">
             <label for="ci-lname">Last Name *</label>
-            <input type="text" id="ci-lname" name="lname" placeholder="e.g. Reddy" required/>
+            <input type="text" id="ci-lname" name="lname" placeholder="e.g. Gowda" required/>
           </div>
-          <div class="cfield">
-            <label for="ci-phone">Mobile Number *</label>
-            <input type="tel" id="ci-phone" name="phone" placeholder="+91 98765 43210" required/>
-          </div>
-          <div class="cfield">
-            <label for="ci-email">Email Address *</label>
-            <input type="email" id="ci-email" name="email" placeholder="you@example.com" required/>
-          </div>
+<div class="cfield">
+  <label for="ci-phone">Mobile Number</label>
+  <input
+    type="tel"
+    id="ci-phone"
+    name="phone"
+    placeholder="+91 98765 43210"
+    required
+    inputmode="tel"
+    autocomplete="tel"
+    pattern="^(\+91[\s-]?)?[6-9]\d{9}$"
+    title="Enter a valid 10-digit Indian mobile number, with optional +91 country code."
+  />
+</div>
+
+<div class="cfield">
+  <label for="ci-email">Email Address</label>
+  <input
+    type="email"
+    id="ci-email"
+    name="email"
+    placeholder="you@example.com"
+    required
+    autocomplete="email"
+    maxlength="254"
+    title="Enter a valid email address."
+  />
+</div>
           <div class="cfield full">
             <label for="ci-how">How did you hear about us?</label>
             <select id="ci-how" name="how">
