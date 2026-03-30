@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Information – HomeGuard Bangalore</title>
+  <meta name="description" content="Share your property details with HomeGuard Bangalore. Our team will get in touch within 2 hours with a customised inspection plan."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">HomeGuard<span class="logo-sub">Bangalore</span></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pages/about.html">About</a></li>
+      <li class="has-dropdown">
+        <a href="pages/services.html">Services ▾</a>
+        <ul class="dropdown">
+          <li><a href="pages/services.html#home-inspection">Home Inspection</a></li>
+          <li><a href="pages/services.html#reinspection">Re-Inspection</a></li>
+          <li><a href="pages/services.html#dampness">Dampness Inspection</a></li>
+          <li><a href="pages/services.html#multistage">Multi-Stage Inspection</a></li>
+          <li><a href="pages/services.html#area-measurement">Area Measurement</a></li>
+        </ul>
+      </li>
+      <li><a href="pages/enquire.html">Book Inspection</a></li>
+      <li><a href="pages/faq.html">FAQs</a></li>
+      <li><a href="customer-info.html" class="active">Customer Info</a></li>
+      <li><a href="pages/contact.html">Contact</a></li>
+    </ul>
+    <a href="pages/enquire.html" class="btn btn-primary nav-cta">Free Consultation</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MAIN FORM -->
+<div class="customer-page-wrap">
+  <div class="container">
+
+    <!-- Form Card -->
+    <div class="customer-form-card" id="customerFormCard">
+      <h1>Tell Us About Your Property</h1>
+      <p class="form-intro">Fill in your details below and our team will contact you within 2 hours with a tailored inspection plan — completely free of obligation.</p>
+
+      <form id="customerInfoForm" novalidate>
+
+        <!-- Personal Details -->
+        <div class="cfield-section-label">👤 Your Details</div>
+        <div class="cfield-group">
+          <div class="cfield">
+            <label for="ci-fname">First Name *</label>
+            <input type="text" id="ci-fname" name="fname" placeholder="e.g. Suresh" required/>
+          </div>
+          <div class="cfield">
+            <label for="ci-lname">Last Name *</label>
+            <input type="text" id="ci-lname" name="lname" placeholder="e.g. Reddy" required/>
+          </div>
+          <div class="cfield">
+            <label for="ci-phone">Mobile Number *</label>
+            <input type="tel" id="ci-phone" name="phone" placeholder="+91 98765 43210" required/>
+          </div>
+          <div class="cfield">
+            <label for="ci-email">Email Address *</label>
+            <input type="email" id="ci-email" name="email" placeholder="you@example.com" required/>
+          </div>
+          <div class="cfield full">
+            <label for="ci-how">How did you hear about us?</label>
+            <select id="ci-how" name="how">
+              <option value="">Select…</option>
+              <option>Google Search</option>
+              <option>Facebook / Instagram</option>
+              <option>Friend or Family Referral</option>
+              <option>Builder / Agent Referral</option>
+              <option>WhatsApp</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Property Details -->
+        <div class="cfield-section-label">🏠 Property Details</div>
+        <div class="cfield-group">
+          <div class="cfield">
+            <label for="ci-ptype">Property Type *</label>
+            <select id="ci-ptype" name="ptype" required>
+              <option value="">Select…</option>
+              <option>Flat / Apartment</option>
+              <option>Villa / Independent House</option>
+              <option>Row House</option>
+              <option>Plot</option>
+              <option>Commercial Space</option>
+            </select>
+          </div>
+          <div class="cfield">
+            <label for="ci-config">Configuration</label>
+            <select id="ci-config" name="config">
+              <option value="">Select…</option>
+              <option>1 BHK</option>
+              <option>2 BHK</option>
+              <option>2.5 BHK</option>
+              <option>3 BHK</option>
+              <option>3.5 BHK</option>
+              <option>4 BHK</option>
+              <option>4+ BHK / Duplex</option>
+              <option>Villa / Independent</option>
+            </select>
+          </div>
+          <div class="cfield">
+            <label for="ci-area">Approx. Area (sq ft)</label>
+            <input type="number" id="ci-area" name="area" placeholder="e.g. 1250" min="100"/>
+          </div>
+          <div class="cfield">
+            <label for="ci-stage">Property Stage *</label>
+            <select id="ci-stage" name="stage" required>
+              <option value="">Select…</option>
+              <option>Ready to Move (Completed)</option>
+              <option>Under Construction</option>
+              <option>Recently Purchased (Post Move-In)</option>
+            </select>
+          </div>
+          <div class="cfield full">
+            <label for="ci-locality">Locality / Area in Bangalore *</label>
+            <input type="text" id="ci-locality" name="locality" placeholder="e.g. Whitefield, Sarjapur Road, HSR Layout…" required/>
+          </div>
+          <div class="cfield full">
+            <label for="ci-builder">Builder / Project Name (if known)</label>
+            <input type="text" id="ci-builder" name="builder" placeholder="e.g. Prestige Sunrise Park, Sobha Dream Gardens…"/>
+          </div>
+        </div>
+
+        <!-- Service Needed -->
+        <div class="cfield-section-label">🔍 Service Required</div>
+        <div class="cfield-group">
+          <div class="cfield full">
+            <label for="ci-service">Which service are you interested in? *</label>
+            <select id="ci-service" name="service" required>
+              <option value="">Select a service…</option>
+              <option>Home Inspection (pre-possession)</option>
+              <option>Re-Inspection (after builder fixes)</option>
+              <option>Dampness &amp; Seepage Inspection</option>
+              <option>Multi-Stage Construction Inspection</option>
+              <option>Area Measurement (carpet vs built-up)</option>
+              <option>Snagging List</option>
+              <option>Not Sure – Need Advice</option>
+            </select>
+          </div>
+          <div class="cfield">
+            <label for="ci-date">Preferred Inspection Date</label>
+            <input type="date" id="ci-date" name="date"/>
+          </div>
+          <div class="cfield">
+            <label for="ci-time">Preferred Time Slot</label>
+            <select id="ci-time" name="time">
+              <option value="">Any time</option>
+              <option>Morning (9am – 12pm)</option>
+              <option>Afternoon (12pm – 3pm)</option>
+              <option>Evening (3pm – 6pm)</option>
+            </select>
+          </div>
+          <div class="cfield full">
+            <label for="ci-notes">Any specific concerns or questions?</label>
+            <textarea id="ci-notes" name="notes" rows="4" placeholder="e.g. I noticed a crack on the external wall near the bedroom window. Also want to check if the terrace waterproofing is done properly…"></textarea>
+          </div>
+        </div>
+
+        <div class="consent-row">
+          <input type="checkbox" id="ci-consent" name="consent" required/>
+          <label for="ci-consent">I agree to be contacted by HomeGuard Bangalore by phone, email or WhatsApp regarding my property inspection enquiry. I understand this is a free, no-obligation consultation. *</label>
+        </div>
+
+        <!-- Network error message (shown only if fetch fails) -->
+        <div class="form-error-box" id="formErrorBox">
+          <strong>⚠️ Submission failed</strong>
+          It looks like there was a network issue. Please check your internet connection and try again, or call us directly at +91 99999 99999.
+        </div>
+
+        <button type="submit" class="customer-submit-btn">
+          Submit My Details &rarr;
+        </button>
+
+        <p style="text-align:center; margin-top:16px; font-size:0.82rem; color:var(--muted);">
+          🔒 Your information is never shared with builders or third parties.
+        </p>
+
+      </form>
+    </div><!-- /form card -->
+
+    <!-- Success State -->
+    <div class="customer-success" id="customerSuccess">
+      <div class="tick">✅</div>
+      <h2>Thank You!</h2>
+      <p>We've received your details. Our engineer will call you within 2 hours to discuss your inspection and answer any questions — completely free.</p>
+      <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:8px;">
+        <a href="index.html" class="btn btn-outline">Back to Home</a>
+        <a href="https://wa.me/919999999999?text=Hi%2C%20I%20just%20submitted%20my%20details%20on%20your%20website" target="_blank" class="btn btn-primary">💬 WhatsApp Us Now</a>
+      </div>
+    </div>
+
+  </div><!-- /container -->
+</div>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/919999999999?text=Hi%2C%20I'm%20interested%20in%20a%20home%20inspection%20in%20Bangalore" 
+   class="whatsapp-float" target="_blank" title="Chat on WhatsApp" aria-label="WhatsApp">
+  💬
+</a>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">HomeGuard<span class="logo-sub">Bangalore</span></span>
+      </div>
+      <p>Professional home inspection services across Bangalore and Karnataka. Protecting homebuyers since 2020.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="pages/services.html#home-inspection">Home Inspection</a></li>
+        <li><a href="pages/services.html#reinspection">Re-Inspection</a></li>
+        <li><a href="pages/services.html#dampness">Dampness Inspection</a></li>
+        <li><a href="pages/services.html#multistage">Multi-Stage Inspection</a></li>
+        <li><a href="pages/services.html#area-measurement">Area Measurement</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="pages/about.html">About Us</a></li>
+        <li><a href="pages/faq.html">FAQs</a></li>
+        <li><a href="pages/contact.html">Contact Us</a></li>
+        <li><a href="customer-info.html">Customer Info</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li>📞 +91 99999 99999</li>
+        <li>✉️ hello@homeguardbangalore.in</li>
+        <li>📍 Koramangala, Bangalore – 560034</li>
+        <li>🕐 Mon–Sat: 8am – 7pm</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span>© 2025 HomeGuard Bangalore. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> · <a href="#">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
