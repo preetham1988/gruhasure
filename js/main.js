@@ -255,3 +255,40 @@ animateEls.forEach(el => {
   el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
   scrollObserver.observe(el);
 });
+
+<script>
+document.getElementById('customerInfoForm').addEventListener('submit', function (e) {
+  const phone = document.getElementById('ci-phone');
+  const email = document.getElementById('ci-email');
+
+  const phonePattern = /^(\+91[\s-]?)?[6-9]\d{9}$/;
+  let isValid = true;
+
+  phone.setCustomValidity('');
+  email.setCustomValidity('');
+
+  if (!phonePattern.test(phone.value.trim())) {
+    phone.setCustomValidity('Please enter a valid 10-digit Indian mobile number.');
+    isValid = false;
+  }
+
+  if (!email.checkValidity()) {
+    email.setCustomValidity('Please enter a valid email address.');
+    isValid = false;
+  }
+
+  if (!isValid) {
+    e.preventDefault();
+    phone.reportValidity();
+    email.reportValidity();
+  }
+});
+
+document.getElementById('ci-phone').addEventListener('input', function () {
+  this.setCustomValidity('');
+});
+
+document.getElementById('ci-email').addEventListener('input', function () {
+  this.setCustomValidity('');
+});
+</script>
