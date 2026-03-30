@@ -11,6 +11,7 @@
 // ✏️  PASTE YOUR GOOGLE APPS SCRIPT URL HERE
 // ─────────────────────────────────────────────────────────────
 const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwgUuGEBd5sh1_nwEVRVaTDiJ-KNAiLvk9En1c14bPj7kkNjSDt-IUum6FCitNAQKUw/exec';
+https://script.google.com/macros/s/AKfycbxgOZJi3tRUs5TmCTGP4TQ0WD3UZmFluaJOtZ9Qu8D-J_mEaTJj7ZNuD9W2BUAGtmqa/exec
 // Example: 'https://script.google.com/macros/s/AKfycbXXX.../exec'
 
 
